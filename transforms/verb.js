@@ -1,5 +1,5 @@
-module.exports = {
-	'tense-past': it => baba$$re(it, [
+export default {
+	'tense-past': it => baba$$mapping(it, [
 		// Exceptions
 		[/((re)?set)$/i, '$1'],
 		['send', 'sent'],
@@ -17,10 +17,10 @@ module.exports = {
 		[/(.*)y$/i, '$1ied'],
 		[/(.*?)e?$/i, '$1ed'],
 	]),
-	'tense-past-participle': it => baba$$re(it, [
+	'tense-past-participle': it => baba$$mapping(it, [
 		[/(.*?)[aeiouy]?$/i, '$1en'],
 	]),
-	'tense-present': it => baba$$re(it, [
+	'tense-present': it => baba$$mapping(it, [
 		// exceptions
 		['checkout', 'checks out'],
 		// general rules
@@ -28,7 +28,7 @@ module.exports = {
 		[/(.*([sc]h|s|ex))$/i, '$1es'],
 		[/(.*)$/i, '$1s'],
 	]),
-	'tense-present-participle': it => baba$$re(it, [
+	'tense-present-participle': it => baba$$mapping(it, [
 		// exceptions
 		['checkout', 'checking out'],
 		['catalog', 'cataloging'],
@@ -44,14 +44,14 @@ module.exports = {
 		[/(.*?)e?$/i, '$1ing'],
 	]),
 	// Make/become/treat
-	'convert-ize': it => baba$$re(it, [
+	'convert-ize': it => baba$$mapping(it, [
 		[/(.*)[aeiouy]$/i, '$1ize'],
 		[/(.*)$/i, '$1ize'],
 	]),
-	'convert-agent-noun-latinate': it => baba$$re(it, [
+	'convert-agent-noun-latinate': it => baba$$mapping(it, [
 		[/(.*?)(e|or)?$/i, '$1or'],
 	]),
-	'convert-agent-noun-germanic': it => baba$$re(it, [
+	'convert-agent-noun-germanic': it => baba$$mapping(it, [
 		[/(.*?)e?$/i, '$1er'],
 	]),
 };

@@ -1,5 +1,5 @@
-module.exports = {
-	'prepend-an': it => baba$$re(it, [
+export default {
+	'prepend-an': it => baba$$mapping(it, [
 		// Exceptions
 		[/^(hour)$/i, 'an $1'],
 		// General rules

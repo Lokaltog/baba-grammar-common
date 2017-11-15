@@ -1,6 +1,7 @@
-module.exports = {
-	plural: it => baba$$re(it, [
+export default {
+	plural: it => baba$$mapping(it, [
 		// exceptions
+		['sheep', 'sheep'],
 		[/(.*)man$/i, '$1men'],
 		[/(person)$/i, 'people'],
 		// general rules
