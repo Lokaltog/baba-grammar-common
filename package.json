@@ -1,0 +1,16 @@
+{
+  "name": "baba-grammar-common",
+  "version": "1.2.0",
+  "description": "Common grammar files for Baba.",
+  "homepage": "https://github.com/Lokaltog/baba-grammar-common",
+  "repository": {
+    "type": "git",
+    "url": "Lokaltog/baba-grammar-common"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kim Silkebækken",
+    "email": "kim@silkebaekken.no",
+    "web": "https://silkebaekken.no/"
+  }
+}
