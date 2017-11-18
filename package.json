@@ -1,8 +1,8 @@
 {
   "name": "baba-grammar-common",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Common grammar files for Baba.",
-  "homepage": "https://github.com/Lokaltog/baba-transforms-common",
+  "homepage": "https://github.com/Lokaltog/baba-grammar-common",
   "repository": {
     "type": "git",
     "url": "Lokaltog/baba-grammar-common"
